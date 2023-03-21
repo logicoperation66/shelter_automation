@@ -2,7 +2,7 @@
 
 def gg_row(
         worksheet:str=None,
-        index:str=None):
+        index:int=None):
     wks = worksheet
     row = wks.get(f"A{index+1}:F{index+1}")
 
