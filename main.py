@@ -12,8 +12,9 @@ sa = gspread.service_account(filename=google_key)
 sh = sa.open(title="dupa bez dupa3")
 wks1 = sh.worksheet(title="Arkusz1")
 
-
+list_of_dicts = wks1.get_all_records()
 
 if __name__ == "__main__":
-    row = ggfunctions.gg_row(worksheet=wks1, index=chosen_indeks)
-    print(row)
+    #Funkcja do pobierania pól z PDF
+    #Funkcja do wypełniania pdf z danych z list_of_dicts
+    #Funkcja do wstawiania zdjęć
